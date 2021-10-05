@@ -1,0 +1,19 @@
+{
+  "name": "questo",
+  "version": "1.0.0",
+  "description": "Get multiple input from users with a array ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colasgabens/questo.git"
+  },
+  "author": "Gabens Colas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colasgabens/questo/issues"
+  },
+  "homepage": "https://github.com/colasgabens/questo#readme"
+}
