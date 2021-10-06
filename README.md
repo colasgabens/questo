@@ -29,14 +29,14 @@ const Data_List =
 
         Check : (Input )  =>{
            
-            let language = false;
+            let result = false;
             switch (parseInt(Input)) {
                 case 1:
                     return "red";
                 case 2:
                     return "blue";
             }
-            return language
+            return result
 
         } 
     },
