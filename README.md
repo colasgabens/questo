@@ -22,26 +22,25 @@ import {stdin,stdout} from 'process';
 const Data_List =
 [
     {
-        Question: "What color you want to use ?
-         \n 1 :- blue \n 2 :- red \n",
+        Question: "What color you want to use ? \n 1 :- blue \n 2 :- red \n",
         Error_Question : "Wrong answer it should be between (1) or (2)",
         On_Close_Response : " thanks",
 
         Check : (Input )  =>{
            
-            let result = false;
+            let language = false;
             switch (parseInt(Input)) {
                 case 1:
-                    return "red";
-                case 2:
                     return "blue";
+                case 2:
+                    return "red";
             }
-            return result
+            return language
 
         } 
     },
         {
-        Question: "What is 1 + 1 ?,
+        Question: "What is 1 + 1 ? ",
         Error_Question : "Wrong answer ",
         On_Close_Response : " thanks",
 
@@ -80,8 +79,7 @@ const stdout = require("process").stdout;
 const Data_List =
 [
     {
-        Question: "What color you want to use ?
-         \n 1 :- blue \n 2 :- red \n",
+        Question: "What color you want to use ? \n 1 :- blue \n 2 :- red \n",
         Error_Question : "Wrong answer it should be between (1) or (2)",
         On_Close_Response : " thanks",
 
@@ -90,16 +88,16 @@ const Data_List =
             let language = false;
             switch (parseInt(Input)) {
                 case 1:
-                    return "red";
-                case 2:
                     return "blue";
+                case 2:
+                    return "red";
             }
             return language
 
         } 
     },
         {
-        Question: "What is 1 + 1 ?,
+        Question: "What is 1 + 1 ? ",
         Error_Question : "Wrong answer ",
         On_Close_Response : " thanks",
 
@@ -121,7 +119,7 @@ const quest = new questo({array : Data_List , stdin: stdin , stdout: stdout });
 
 
 quest.main().on("end",data=>{
-    console.log(data) // ["red",true]
+    console.log(data) 
 });
 
 ```
